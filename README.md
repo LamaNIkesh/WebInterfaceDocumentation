@@ -1,3 +1,3 @@
 # WebInterfaceDocumentation
 
-Readmedocs files for the webinterface documentation
+Readthedocs files for the webinterface documentation
