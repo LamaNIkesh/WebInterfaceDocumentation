@@ -2,7 +2,7 @@
 WebInterfaceDocs's documentation
 ============================================
 
-Simulation Controller Interface is a web based 
+
 
 Another simple header
 =====================
@@ -44,9 +44,10 @@ Guide:
 .. toctree::
 	:maxdepth: 2
 	:caption: Table of Contents
-		
-	license
-	help
+
+	Getting started
+	Help	
+
      
 	
 
