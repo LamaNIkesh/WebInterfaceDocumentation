@@ -159,6 +159,7 @@
             
   <div class="section" id="webinterfacedocs-s-documentation">
 <h1>WebInterfaceDocs’s documentation<a class="headerlink" href="#webinterfacedocs-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Simulation Controller Interface is a web based</p>
 </div>
 <div class="section" id="another-simple-header">
 <h1>Another simple header<a class="headerlink" href="#another-simple-header" title="Permalink to this headline">¶</a></h1>
@@ -213,6 +214,21 @@
 <span class="k">if</span><span class="p">(</span><span class="n">mqttc</span><span class="o">.</span><span class="n">on_message</span><span class="p">):</span>
 	<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;received&quot;</span><span class="p">)</span>
 
+</pre></div>
+</div>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="hll"><span class="x">if (file_exists (&quot;Libraries/database.txt&quot;)){</span>
+</span><span class="x">        $data= file(&quot;Libraries/database.txt&quot;);</span>
+<span class="hll"><span class="x">        for ($line = 0; $line &lt; count($data); ++$line){</span>
+</span><span class="x">                $userData=explode(&quot; &quot;,$data[$line]);</span>
+<span class="hll"><span class="x">                if ($userData[3]==&quot;1&quot;){</span>
+</span><span class="x">                        $flag=1;</span>
+<span class="x">                        $userLogged=$userData[0];</span>
+<span class="x">                        $email=$userData[2];</span>
+<span class="x">                        $val=strval(intval($userData[4]));</span>
+<span class="x">                        $simNum=trim(preg_replace(&#39;/\s\s+/&#39;, &#39; &#39;, $val));</span>
+<span class="x">                }</span>
+<span class="x">        }</span>
+<span class="x">}</span>
 </pre></div>
 </div>
 <div class="section" id="guide">

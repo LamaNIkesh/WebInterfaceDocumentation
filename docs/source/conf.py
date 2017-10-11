@@ -86,7 +86,8 @@ todo_include_todos = False
 #================
 
 html_theme = "sphinx_rtd_theme"
-
+#html_theme = 'dotted'
+#html_theme = 'haiku'
 #================
 
 #html_theme = 'dotted'
