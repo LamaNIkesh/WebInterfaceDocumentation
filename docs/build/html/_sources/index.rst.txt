@@ -1,9 +1,5 @@
-
-FPGA Web Interface
+FPGA Web Interface: Introduction
 ===================================
-
-Introduction:
-=============
 
 The Field Programmable Gate-Arrays(FPGAs) clusters offers a powerful hardware platform capable of performing realistic simulations of Biological Neural Systems(BNS). However, making use of such powerful platform is not easy and not all users have enough understanding and experience to exploit such hardware. Having a user friendly software platform to interact with FPGAs in a much higher abstraction level will allow more researchers to make use of such powerful hardware without having to spend a lot of time actually understanding the platform. Such user interface takes away a certain level of abstraction and makes it intuitive and easy to generate desired biologically inspired neural network with desired neuron models, synpase models, network size, network topology and desired stimulation configuration for the neural network. Here, we discuss web based user interface that we developed to interface with the FPGA cluster that allows users to easily and intuitively to create desired network to be run on the FPGA cluster. So far only biologically inspired spiking neuron models are implemented.  
 
@@ -17,11 +13,9 @@ Some of the features of the web interface are listed below:
 * Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model. 
 * Select the type of topology; fully interconnected, random or probabilistic(30% connection at the moment)
 * Configure the simulation paramters such as simualtion time, timestep size, watchdog period etc. 
+* Specify stimulation parameters such as start and end time and voltage. [*Only step stimulation is implemented at the moment*]
 
 
-
-Guide:
-^^^^^
 .. toctree::
 	:maxdepth: 2
 	:caption: Table of Contents
@@ -30,7 +24,6 @@ Guide:
 	Help	
 
      
-	
 
 
 

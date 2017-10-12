@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>FPGA Web Interface &mdash; WebInterfaceDocs 0.0.1 documentation</title>
+  <title>FPGA Web Interface: Introduction &mdash; WebInterfaceDocs 0.0.1 documentation</title>
   
 
   
@@ -140,7 +140,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>FPGA Web Interface</li>
+      <li>FPGA Web Interface: Introduction</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -159,11 +159,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="fpga-web-interface">
-<h1>FPGA Web Interface<a class="headerlink" href="#fpga-web-interface" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="introduction">
-<h1>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="fpga-web-interface-introduction">
+<h1>FPGA Web Interface: Introduction<a class="headerlink" href="#fpga-web-interface-introduction" title="Permalink to this headline">¶</a></h1>
 <p>The Field Programmable Gate-Arrays(FPGAs) clusters offers a powerful hardware platform capable of performing realistic simulations of Biological Neural Systems(BNS). However, making use of such powerful platform is not easy and not all users have enough understanding and experience to exploit such hardware. Having a user friendly software platform to interact with FPGAs in a much higher abstraction level will allow more researchers to make use of such powerful hardware without having to spend a lot of time actually understanding the platform. Such user interface takes away a certain level of abstraction and makes it intuitive and easy to generate desired biologically inspired neural network with desired neuron models, synpase models, network size, network topology and desired stimulation configuration for the neural network. Here, we discuss web based user interface that we developed to interface with the FPGA cluster that allows users to easily and intuitively to create desired network to be run on the FPGA cluster. So far only biologically inspired spiking neuron models are implemented.</p>
 <p>The Web Interface allows users to design their custom spiking neural networks with different neuron models which in turn will be run on the high performance FPGA clusters. The web interface is linked to the interface manager (IM) which works as an intermediate node between web interface and the FPGA clusters. IM receives the simulation initialisation files from the web interface and sends result packets once the simulation has completed back to the web interface.</p>
 <p>Some of the features of the web interface are listed below:</p>
@@ -174,9 +171,8 @@
 <li>Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model.</li>
 <li>Select the type of topology; fully interconnected, random or probabilistic(30% connection at the moment)</li>
 <li>Configure the simulation paramters such as simualtion time, timestep size, watchdog period etc.</li>
+<li>Specify stimulation parameters such as start and end time and voltage. [<em>Only step stimulation is implemented at the moment</em>]</li>
 </ul>
-<div class="section" id="guide">
-<h2>Guide:<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul>
@@ -186,7 +182,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#contact">Contact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Help.html">Help:</a></li>
 </ul>
-</div>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
