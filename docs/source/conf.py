@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'WebInterfaceDocs'
+project = 'FPGA user interface'
 copyright = '2017, Nikesh Lama'
 author = 'Nikesh Lama'
 
@@ -105,7 +105,7 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
+html_logo = 'images/mainlogo.png'
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #

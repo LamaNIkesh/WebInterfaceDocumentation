@@ -26,7 +26,7 @@ Some of the features of the web interface are listed below:
 
 .. toctree::
 	:maxdepth: 2
-	:caption: Table of Contents
+	:caption: Contents
 
 	Getting started
 	Help	
