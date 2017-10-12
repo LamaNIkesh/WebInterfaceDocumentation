@@ -1,19 +1,26 @@
 Getting Started:
 ================
 
+This document will show yo how to get up and running the web interface. The whole process is very straightforward but it does require an initial plan about the network requirements. 
 
-User Guide:
-===========
+Users please refer to :ref:`users` for getting started
+For developers please refer to 
+:ref:`developers` which will cover about how the servers are set up. 
+
+.. _users:
+
+Getting started for users
+-------------------------
 
 
-License:
-========
+.. _developers:
 
-The NTU License (NTU)
+Getting started for developers 
+-------------------------------
 
-Copyright (c) 2017 Nottingham Trent University
+asdfasdf
 
 
-Contact
-=======
-Questions? Please contact nikesh.strat@yahoo.com
+
+
+

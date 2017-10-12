@@ -29,7 +29,9 @@ Some of the features of the web interface are listed below:
 	:caption: Contents
 
 	Getting started
+	License
 	Help	
+	Contact
 
      
 
@@ -42,4 +44,3 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-testing
