@@ -1,43 +1,24 @@
 
-WebInterfaceDocs's documentation
-============================================
+FPGA Web Interface
+===================================
+
+Introduction:
+=============
+
+The Field Programmable Gate-Arrays(FPGAs) clusters offers a powerful hardware platform capable of performing realistic simulations of Biological Neural Systems(BNS). However, making use of such powerful platform is not easy and not all users have enough understanding and experience to exploit such hardware. Having a user friendly software platform to interact with FPGAs in a much higher abstraction level will allow more researchers to make use of such powerful hardware without having to spend a lot of time actually understanding the platform. Such user interface takes away a certain level of abstraction and makes it intuitive and easy to generate desired biologically inspired neural network with desired neuron models, synpase models, network size, network topology and desired stimulation configuration for the neural network. Here, we discuss web based user interface that we developed to interface with the FPGA cluster that allows users to easily and intuitively to create desired network to be run on the FPGA cluster. So far only biologically inspired spiking neuron models are implemented.  
+
+The Web Interface allows users to design their custom spiking neural networks with different neuron models which in turn will be run on the high performance FPGA clusters. The web interface is linked to the interface manager (IM) which works as an intermediate node between web interface and the FPGA clusters. IM receives the simulation initialisation files from the web interface and sends result packets once the simulation has completed back to the web interface. 
+
+Some of the features of the web interface are listed below:
+
+* Select existing parameterisable neuron models from the model library. 
+* Select number of neurons with same or different neuron models.
+* Select layered or non-layered network. Layered network would be a feedforward network where the first layer is the input layer and last layer is the output.
+* Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model. 
+* Select the type of topology; fully interconnected, random or probabilistic(30% connection at the moment)
+* Configure the simulation paramters such as simualtion time, timestep size, watchdog period etc. 
 
 
-
-Another simple header
-=====================
-
-.. code-block:: python
-	:emphasize-lines: 3,5
-	
-	def some_function():
-		interesting = False
-		print 'This line is highlighted'
-		print 'This one is not...'
-		print '...but this one is '
-	print 'Hello world'
-	>>>Hello World
-
-
-.. literalinclude:: subscriber.py
-	:language: python
-
-.. code-block:: php	
-	:emphasize-lines: 1,3,5
-
-	if (file_exists ("Libraries/database.txt")){
-		$data= file("Libraries/database.txt");
-		for ($line = 0; $line < count($data); ++$line){
-			$userData=explode(" ",$data[$line]);
-			if ($userData[3]=="1"){
-				$flag=1;
-				$userLogged=$userData[0];
-				$email=$userData[2];
-				$val=strval(intval($userData[4]));
-				$simNum=trim(preg_replace('/\s\s+/', ' ', $val));
-			}
-		}
-	}
 
 Guide:
 ^^^^^

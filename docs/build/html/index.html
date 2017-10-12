@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>WebInterfaceDocs’s documentation &mdash; WebInterfaceDocs 0.0.1 documentation</title>
+  <title>FPGA Web Interface &mdash; WebInterfaceDocs 0.0.1 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="WebInterfaceDocs 0.0.1 documentation" href="#"/>
-        <link rel="next" title="Introduction:" href="Getting started.html"/> 
+        <link rel="next" title="Getting Started:" href="Getting started.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,8 +91,7 @@
             
               <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Getting started.html">Introduction:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Getting started.html#getting-started">Getting Started:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting started.html">Getting Started:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#user-guide">User Guide:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#license">License:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#contact">Contact</a></li>
@@ -141,7 +140,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>WebInterfaceDocs’s documentation</li>
+      <li>FPGA Web Interface</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,86 +159,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="webinterfacedocs-s-documentation">
-<h1>WebInterfaceDocs’s documentation<a class="headerlink" href="#webinterfacedocs-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="fpga-web-interface">
+<h1>FPGA Web Interface<a class="headerlink" href="#fpga-web-interface" title="Permalink to this headline">¶</a></h1>
 </div>
-<div class="section" id="another-simple-header">
-<h1>Another simple header<a class="headerlink" href="#another-simple-header" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
-        <span class="n">interesting</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="hll">        <span class="k">print</span> <span class="s1">&#39;This line is highlighted&#39;</span>
-</span>        <span class="k">print</span> <span class="s1">&#39;This one is not...&#39;</span>
-<span class="hll">        <span class="k">print</span> <span class="s1">&#39;...but this one is &#39;</span>
-</span><span class="k">print</span> <span class="s1">&#39;Hello world&#39;</span>
-<span class="o">&gt;&gt;&gt;</span><span class="n">Hello</span> <span class="n">World</span>
-</pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">paho.mqtt.client</span> <span class="kn">as</span> <span class="nn">mqtt</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="c1">#Interface Manager</span>
-<span class="c1">#Your broker IP</span>
-<span class="n">MQTT_HOST</span><span class="o">=</span> <span class="s2">&quot;100.100.1.254&quot;</span>
-<span class="n">MQTT_PORT</span> <span class="o">=</span> <span class="mi">3000</span>
-<span class="n">MQTT_KEEPALIVE_INTERVAL</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">MQTT_TOPIC</span> <span class="o">=</span> <span class="s2">&quot;webapp/post&quot;</span>
-
-
-<span class="c1">#Define on_connect event handler</span>
-<span class="k">def</span> <span class="nf">on_connect</span><span class="p">(</span><span class="n">mosq</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span><span class="n">flags</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
-	<span class="c1">#subscribe to the topic</span>
-	<span class="n">mqttc</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">MQTT_TOPIC</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-
-<span class="c1">#Define on_subscribe event handler</span>
-<span class="k">def</span> <span class="nf">on_subscribe</span><span class="p">(</span><span class="n">mosq</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">granted_qos</span><span class="p">):</span>
-	<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Subscribed to &#39;</span><span class="si">%s</span><span class="s2">&#39; Topic&quot;</span><span class="o">%</span><span class="n">MQTT_TOPIC</span><span class="p">)</span>
-
-<span class="c1">#define on_message event Handler</span>
-<span class="k">def</span> <span class="nf">on_message</span><span class="p">(</span><span class="n">mosq</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">msg</span><span class="p">):</span>
-	<span class="k">print</span> <span class="n">msg</span><span class="o">.</span><span class="n">payload</span>
-
-<span class="c1">#Initiate MQTT client</span>
-<span class="n">mqttc</span> <span class="o">=</span> <span class="n">mqtt</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span>
-
-<span class="c1">#Register event handlers</span>
-<span class="n">mqttc</span><span class="o">.</span><span class="n">on_message</span> <span class="o">=</span> <span class="n">on_message</span>
-<span class="n">mqttc</span><span class="o">.</span><span class="n">on_connect</span> <span class="o">=</span> <span class="n">on_connect</span>
-<span class="n">mqttc</span><span class="o">.</span><span class="n">on_subscribe</span> <span class="o">=</span> <span class="n">on_subscribe</span>
-
-
-<span class="c1">#connect with MQTT broker</span>
-<span class="n">mqttc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">MQTT_HOST</span><span class="p">,</span> <span class="n">MQTT_PORT</span><span class="p">,</span> <span class="n">MQTT_KEEPALIVE_INTERVAL</span><span class="p">)</span>
-
-<span class="c1">#continue the network loop</span>
-<span class="n">mqttc</span><span class="o">.</span><span class="n">loop_forever</span><span class="p">()</span>
-
-<span class="k">if</span><span class="p">(</span><span class="n">mqttc</span><span class="o">.</span><span class="n">on_message</span><span class="p">):</span>
-	<span class="k">print</span> <span class="p">(</span><span class="s2">&quot;received&quot;</span><span class="p">)</span>
-
-</pre></div>
-</div>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="hll"><span class="x">if (file_exists (&quot;Libraries/database.txt&quot;)){</span>
-</span><span class="x">        $data= file(&quot;Libraries/database.txt&quot;);</span>
-<span class="hll"><span class="x">        for ($line = 0; $line &lt; count($data); ++$line){</span>
-</span><span class="x">                $userData=explode(&quot; &quot;,$data[$line]);</span>
-<span class="hll"><span class="x">                if ($userData[3]==&quot;1&quot;){</span>
-</span><span class="x">                        $flag=1;</span>
-<span class="x">                        $userLogged=$userData[0];</span>
-<span class="x">                        $email=$userData[2];</span>
-<span class="x">                        $val=strval(intval($userData[4]));</span>
-<span class="x">                        $simNum=trim(preg_replace(&#39;/\s\s+/&#39;, &#39; &#39;, $val));</span>
-<span class="x">                }</span>
-<span class="x">        }</span>
-<span class="x">}</span>
-</pre></div>
-</div>
+<div class="section" id="introduction">
+<h1>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The Field Programmable Gate-Arrays(FPGAs) clusters offers a powerful hardware platform capable of performing realistic simulations of Biological Neural Systems(BNS). However, making use of such powerful platform is not easy and not all users have enough understanding and experience to exploit such hardware. Having a user friendly software platform to interact with FPGAs in a much higher abstraction level will allow more researchers to make use of such powerful hardware without having to spend a lot of time actually understanding the platform. Such user interface takes away a certain level of abstraction and makes it intuitive and easy to generate desired biologically inspired neural network with desired neuron models, synpase models, network size, network topology and desired stimulation configuration for the neural network. Here, we discuss web based user interface that we developed to interface with the FPGA cluster that allows users to easily and intuitively to create desired network to be run on the FPGA cluster. So far only biologically inspired spiking neuron models are implemented.</p>
+<p>The Web Interface allows users to design their custom spiking neural networks with different neuron models which in turn will be run on the high performance FPGA clusters. The web interface is linked to the interface manager (IM) which works as an intermediate node between web interface and the FPGA clusters. IM receives the simulation initialisation files from the web interface and sends result packets once the simulation has completed back to the web interface.</p>
+<p>Some of the features of the web interface are listed below:</p>
+<ul class="simple">
+<li>Select existing parameterisable neuron models from the model library.</li>
+<li>Select number of neurons with same or different neuron models.</li>
+<li>Select layered or non-layered network. Layered network would be a feedforward network where the first layer is the input layer and last layer is the output.</li>
+<li>Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model.</li>
+<li>Select the type of topology; fully interconnected, random or probabilistic(30% connection at the moment)</li>
+<li>Configure the simulation paramters such as simualtion time, timestep size, watchdog period etc.</li>
+</ul>
 <div class="section" id="guide">
 <h2>Guide:<a class="headerlink" href="#guide" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Getting started.html">Introduction:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Getting started.html#getting-started">Getting Started:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting started.html">Getting Started:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#user-guide">User Guide:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#license">License:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting started.html#contact">Contact</a></li>
@@ -268,7 +209,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Getting started.html" class="btn btn-neutral float-right" title="Introduction:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Getting started.html" class="btn btn-neutral float-right" title="Getting Started:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
