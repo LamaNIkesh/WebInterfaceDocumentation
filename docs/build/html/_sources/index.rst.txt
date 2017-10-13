@@ -24,17 +24,15 @@ Some of the features of the web interface are listed below:
 * Visualisation of the spike train obtained after the simulation as raster plot. 
 
 
-.. toctree::
+.. toctrosboxes.orgee::
 	:maxdepth: 2
 	:caption: Contents
 
 	Getting started
 	License
 	Help	
-	Contact
-
-     
-
+	Contact     
+	
 
 
 Indices and tables
