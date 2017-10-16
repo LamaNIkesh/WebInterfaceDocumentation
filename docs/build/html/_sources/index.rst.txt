@@ -14,7 +14,7 @@ The web interface is linked to the interface manager (IM) which works as an inte
 
 Some of the features of the web interface are listed below:
 
-* Select existing parameterisable neuron models from the model library. 
+* Select existing parameterisable neuron models from the model library(current models: Integrate and Fire, Leaky Integrate and Fire, Izhekevich). 
 * Specify number of neurons with same or different neuron models.
 * Select layered or non-layered network. Layered network would be a feedforward network where the first layer is the input layer and last layer is the output.
 * Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model. 
