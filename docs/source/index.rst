@@ -28,6 +28,7 @@ Some of the features of the web interface are listed below:
 	:caption: Contents
 
 	Getting started
+	Structure
 	Features
 	License
 	Help	
