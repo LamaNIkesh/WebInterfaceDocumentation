@@ -1,4 +1,4 @@
-Getting Started:
+Getting Started
 ================
 
 This document will show yo how to get up and running the web interface. The whole process is very straightforward but it does require an initial plan about the network requirements. 
