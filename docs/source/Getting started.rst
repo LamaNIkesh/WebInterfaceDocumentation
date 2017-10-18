@@ -1,24 +1,17 @@
 Getting Started
-================
+===============
 
-This document will show yo how to get up and running the web interface. The whole process is very straightforward but it does require an initial plan about the network requirements. 
+This document will show yo how to get up and running the web interface. The whole process is very straightforward but it does require an initial plan about the network requirements from the user side. 
 
-Users please refer to :ref:`users` for getting started
-For developers please refer to 
-:ref:`developers` which will cover about how the servers are set up. 
+This section is divided into two parts: one for users who want to make use of the platform for their use and another for the developers who want to understand and carry on with the development of the platform.
 
-.. _users:
-
-Getting started for users
--------------------------
-
-
-.. _developers:
-
-Getting started for developers 
--------------------------------
-
-asdfasdf
+.. toctree::
+	:maxdepth: 2
+	:caption: Contents/Gettingstarted
+	
+	Users
+	Developers  
+	
 
 
 

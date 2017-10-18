@@ -18,3 +18,13 @@ Some of the features of the web interface are listed below:
 * Configure the simulation paramters such as simualtion time, timestep size, watchdog period etc. 
 * Specify stimulation parameters such as start and end time and voltage. [*Only step stimulation is implemented at the moment*]
 * Visualisation of the spike train obtained after the simulation as raster plot. 
+
+.. toctree::
+	:maxdepth: 2
+	:caption: Contents
+
+	Structure
+	Features
+
+		
+	   
