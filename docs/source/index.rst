@@ -28,16 +28,17 @@ Some of the key features of the web interface are listed below:
 * Visualisation of the spike train obtained after the simulation as raster plot. 
 
 
-The main documentation for the user side is organized into few sections:
+The documentation is divided into two parts: 
+
+Information for users on how to use and what are the features and limitations:
 
 * :ref:`user-docs`
  
-Information for developers about the development:
+Information for developers:
 
 * :ref:`dev-docs`
 
 .. _user-docs:
-
 .. toctree::
 	:maxdepth: 2
 	:caption: User Documentation
