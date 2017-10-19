@@ -54,11 +54,9 @@ Information for developers:
 	:maxdepth: 2
 	:caption: Developer Documentation
 	
-	Overview
 	Getting started
-	License
-	Help	
-	Contact 
+	Contact
+
 
 
 
