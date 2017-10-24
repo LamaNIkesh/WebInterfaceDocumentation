@@ -30,7 +30,7 @@ Some of the key features of the web interface are listed below:
 
 The documentation is divided into two parts: 
 
-Information for users on how to use and what are the features and limitations:
+Information for users:
 
 * :ref:`user-docs`
  
