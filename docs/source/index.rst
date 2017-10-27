@@ -19,7 +19,7 @@ Some of the key features of the web interface are listed below:
 
 * Create a custom network of spiking neurons with parameterisable simulation and models with custom stimulation parameters.
 * Select existing parameterisable neuron models from the model library(Current Models: Integrate and Fire, Leaky Integrate and Fire, Izhekevich). 
-* Specify number of neurons with same or different neuron models.
+* Specify number of neurons with same or different neuron models.If you want same models with different paramters then you can also do that.
 * Select layered or non-layered network. Layered network would be a feedforward network where the first layer is the input layer and last layer is the output.
 * Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model. 
 * Select the type of topology; fully interconnected, random or probabilistic(30% connection at the moment)
