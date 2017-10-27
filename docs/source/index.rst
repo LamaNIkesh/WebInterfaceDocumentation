@@ -27,7 +27,6 @@ Some of the key features of the web interface are listed below:
 * Specify stimulation parameters such as start and end time and voltage. [*Only step stimulation is implemented at the moment*]
 * Visualisation of the spike train obtained after the simulation as raster plot. 
 
-
 The documentation is divided into two parts: 
 
 Information for users:
