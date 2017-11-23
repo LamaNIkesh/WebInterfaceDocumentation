@@ -44,6 +44,7 @@ Information for developers:
 
 	Overview
 	Getting started
+  Usage
 	License
 	Help	
 	Contact     
