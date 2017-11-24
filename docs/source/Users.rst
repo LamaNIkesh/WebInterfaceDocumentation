@@ -1,6 +1,8 @@
-Getting started for users
+User Documentation
 =========================
 
-For users
+This page give all the details about how to use the platform and and its functionality.
+
+
 
 

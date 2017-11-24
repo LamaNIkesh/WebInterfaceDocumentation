@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; FPGA user interface 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="FPGA user interface 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="Users Documentation" href="Users/index.html"/>
+        <link rel="prev" title="FPGA Web Interface: Introduction" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FPGA user interface
+          
+
+          
+            
+            <img src="_static/mainlogo.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#platform-overview">Platform Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#some-overview-of-the-platform">Some overview of the platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bug-reports">Bug reports</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Users/index.html">Users Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Developers/index.html">Developers Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FPGA user interface</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Introduction to the platform</p>
+<div class="section" id="platform-overview">
+<h2>Platform Overview<a class="headerlink" href="#platform-overview" title="Permalink to this headline">¶</a></h2>
+<p>The Field Programmable Gate-Arrays(FPGAs) clusters offers a powerful hardware platform capable of performing realistic simulations of Biological Neural Systems(BNS). However, making use of such powerful platform is not easy and not all users have enough understanding and experience to exploit such hardware. Having a user friendly software platform to interact with FPGAs in a much higher abstraction level will allow more researchers to make use of such powerful hardware without having to spend a lot of time actually understanding the platform. Such user interface takes away a certain level of abstraction and makes it intuitive and easy to generate desired biologically inspired neural network with desired neuron models, synpase models, network size, network topology and desired stimulation configuration for the neural network. Here, we discuss web based user interface that we developed to interface with the FPGA cluster that allows users to easily and intuitively create desired network to be run on the FPGA cluster.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">So far only biologically inspired spiking neuron models are implemented.</p>
+</div>
+</div>
+<div class="section" id="some-overview-of-the-platform">
+<h2>Some overview of the platform<a class="headerlink" href="#some-overview-of-the-platform" title="Permalink to this headline">¶</a></h2>
+<p>The web interface is linked to the interface manager (IM) which works as an intermediate node between web interface and the FPGA clusters and manages flow of packets to and from both FPGAs and web interface.IM receives the simulation initialisation files, which contains all the information about the simulation in xml format, from the web interface generated by the users which will be sent to the appropriate FPGA nodes for simulation and result packets received from the FPGA clusters once the simulation has completed are sent back to the web interface. The simplified version of the workflow can be shown as below:</p>
+<div class="figure align-center" id="id1">
+<img alt="_images/dataflow.jpg" src="_images/dataflow.jpg" />
+<p class="caption"><span class="caption-text">Figure1: Simplified work flow of the whole process</span></p>
+</div>
+<p>Some of the key features of the web interface are listed below:</p>
+<ul class="simple">
+<li>Create a custom network of spiking neurons with parameterisable simulation and models with custom stimulation parameters.</li>
+<li>Select existing parameterisable neuron models from the model library(Current Models: Integrate and Fire, Leaky Integrate and Fire, Izhekevich).</li>
+<li>Specify number of neurons with same or different neuron models.If you want same models with different paramters then you can also do that.</li>
+<li>Select layered or non-layered network. Layered network would be a feedforward network where the first layer is the input layer and last layer is the output.</li>
+<li>Select same or different neruon models on each layer. All the neurons in a single layer will have the same neuron model.</li>
+<li>Select the type of topology; fully interconnected, random or probabilistic(30% connection at the moment)</li>
+<li>Configure the simulation paramters such as simualtion time, timestep size, watchdog period etc.</li>
+<li>Specify stimulation parameters such as start and end time and voltage. [<em>Only step stimulation is implemented at the moment</em>]</li>
+<li>Visualisation of the spike train obtained after the simulation as raster plot.</li>
+</ul>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>The following requirements should be met:</p>
+<ul class="simple">
+<li>Mozilla or Google chrome browser.</li>
+<li>CPU requirements</li>
+</ul>
+</div>
+<div class="section" id="disclaimer">
+<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>The contents of the platform remains a sole Intellectual property of Nottingham Trent University.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="bug-reports">
+<h2>Bug reports<a class="headerlink" href="#bug-reports" title="Permalink to this headline">¶</a></h2>
+<p>Did you find a bug? Open an issue on <a class="reference external" href="https://github.com/LamaNIkesh/SimulationControllerInterface/issues">github</a> . Thank you.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Users/index.html" class="btn btn-neutral float-right" title="Users Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="FPGA Web Interface: Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Nikesh Lama.
+      Last updated on Nov 24, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
