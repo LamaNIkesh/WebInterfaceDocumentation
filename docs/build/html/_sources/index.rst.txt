@@ -1,3 +1,6 @@
+|green|
+
+
 FPGA Web Interface: Introduction
 ===================================
 
@@ -25,7 +28,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-
-
-
+.. |green| image:: https://readthedocs.org/projects/webinterfacedocumentation/badge/?version=latest
 
