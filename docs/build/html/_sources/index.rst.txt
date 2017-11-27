@@ -5,6 +5,8 @@ The Field Programmable Gate-Arrays(FPGAs) clusters offers a powerful hardware pl
 
 .. note:: So far only biologically inspired spiking neuron models are implemented.
 
+The document is divided into two parts-for users and for developers. The user documentation talks about how to use the platform and the possibilities offered by the platform. The developer part gives details about the overall structure of the platform for further development.
+
 Contents
 --------
 
