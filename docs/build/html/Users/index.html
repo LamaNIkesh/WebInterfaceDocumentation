@@ -103,6 +103,28 @@
 <li class="toctree-l2"><a class="reference internal" href="Configuration.html">Configuration</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#neuron-models">Neuron Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#integrate-and-fire">Integrate and Fire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#leaky-integrate-and-fire">Leaky Integrate and Fire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#izhikevich">Izhikevich</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-models">Custom Models</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#topology">Topology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#layered">Layered</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#non-layered">Non-layered</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fully-interconnected-network">Fully interconnected network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#randomly-interconnected-network">Randomly interconnected network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#probabilistically-interconnected-network">Probabilistically interconnected network</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#stimulation">Stimulation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-current">Step current</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frequency-based">Frequency based</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#biphasic-stimulation">Biphasic stimulation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#examples-and-tutorials">Examples and Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Developers/index.html">Developers Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Contact.html">Contact</a></li>
 </ul>
@@ -170,7 +192,11 @@
             
   <div class="section" id="user-manual">
 <span id="users-index"></span><h1>User Manual<a class="headerlink" href="#user-manual" title="Permalink to this headline">¶</a></h1>
-<p>Please follow this page to get familiar with the platform with series of tutorials on how to use the Platform.</p>
+<p>This part of the documentation is focused to provide a comprehensive details of the interface to users. This section covers currently implemented neuron models, different options of topologies, stimulation options followed with some examples and tutorials on how to create a network, change parameters, assign stimulation parameters and run the simulations. The simulations can be stopped, aborted or restarted at any point. Once, the network is mapped into the FPGA cluster, users can run the simulation at their own convenience.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A fixed timeout will be assigned later to allow for fair usage of the cluster</p>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="NeuronModel.html">Neuron Models</a></li>
@@ -180,6 +206,62 @@
 <li class="toctree-l1"><a class="reference internal" href="Configuration.html">Configuration</a></li>
 </ul>
 </div>
+</div>
+<div class="section" id="neuron-models">
+<h1>Neuron Models<a class="headerlink" href="#neuron-models" title="Permalink to this headline">¶</a></h1>
+<p>Neuron Models</p>
+<div class="section" id="integrate-and-fire">
+<h2>Integrate and Fire<a class="headerlink" href="#integrate-and-fire" title="Permalink to this headline">¶</a></h2>
+<p>Integrate and fire neuron model</p>
+</div>
+<div class="section" id="leaky-integrate-and-fire">
+<h2>Leaky Integrate and Fire<a class="headerlink" href="#leaky-integrate-and-fire" title="Permalink to this headline">¶</a></h2>
+<p>Leaky integrate and fire</p>
+</div>
+<div class="section" id="izhikevich">
+<h2>Izhikevich<a class="headerlink" href="#izhikevich" title="Permalink to this headline">¶</a></h2>
+<p>Izhikevich model</p>
+</div>
+<div class="section" id="custom-models">
+<h2>Custom Models<a class="headerlink" href="#custom-models" title="Permalink to this headline">¶</a></h2>
+<p>Currently working</p>
+</div>
+</div>
+<div class="section" id="topology">
+<h1>Topology<a class="headerlink" href="#topology" title="Permalink to this headline">¶</a></h1>
+<p>Topology options</p>
+<div class="section" id="layered">
+<h2>Layered<a class="headerlink" href="#layered" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="non-layered">
+<h2>Non-layered<a class="headerlink" href="#non-layered" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fully-interconnected-network">
+<h2>Fully interconnected network<a class="headerlink" href="#fully-interconnected-network" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="randomly-interconnected-network">
+<h2>Randomly interconnected network<a class="headerlink" href="#randomly-interconnected-network" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="probabilistically-interconnected-network">
+<h2>Probabilistically interconnected network<a class="headerlink" href="#probabilistically-interconnected-network" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="stimulation">
+<h1>Stimulation<a class="headerlink" href="#stimulation" title="Permalink to this headline">¶</a></h1>
+<p>Different options for stimulation</p>
+<div class="section" id="step-current">
+<h2>Step current<a class="headerlink" href="#step-current" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="frequency-based">
+<h2>Frequency based<a class="headerlink" href="#frequency-based" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="biphasic-stimulation">
+<h2>Biphasic stimulation<a class="headerlink" href="#biphasic-stimulation" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="examples-and-tutorials">
+<h1>Examples and Tutorials<a class="headerlink" href="#examples-and-tutorials" title="Permalink to this headline">¶</a></h1>
+<p>Few examples and Tutorials</p>
 </div>
 
 
