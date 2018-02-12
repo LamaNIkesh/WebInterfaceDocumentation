@@ -37,7 +37,7 @@ Requirements
 
 The following requirements should be met:
 
-- Mozilla or Google chrome browser.
+- Mozilla or Google chrome browser (Recommended).
 - CPU requirements
 
 
