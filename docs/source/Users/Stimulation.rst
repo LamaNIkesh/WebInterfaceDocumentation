@@ -1,5 +1,3 @@
-.. _Users-index:
-
 Stimulation
 ===========
 
