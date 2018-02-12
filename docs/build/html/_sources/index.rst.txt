@@ -1,5 +1,7 @@
+Welcome to Neuromorphic Neural Network Simulator Documentation
+==============================================================
 Contents
-===================================
+--------
 
 .. toctree::
   :maxdepth: 2
