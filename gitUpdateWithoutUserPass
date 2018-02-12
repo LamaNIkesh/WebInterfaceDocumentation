@@ -12,3 +12,7 @@ git config --global credential.helper 'cache --timeout 43200'
 easypush "commit name" for easy push
 
 easypush is an alias for gitpush function in .bashrc file in home directory
+
+#to activate easy push on a new terminal
+
+run source ~/.bashrc
