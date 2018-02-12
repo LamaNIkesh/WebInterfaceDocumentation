@@ -6,3 +6,9 @@ Password for 'https://USERNAME@github.com': <PASSWORD>
 
 git config --global credential.helper 'cache --timeout 43200'
 #it will be cached for 43200 seconds i.e.12 hrs
+
+
+
+easypush "commit name" for easy push
+
+easypush is an alias for gitpush function in .bashrc file in home directory
