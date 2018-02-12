@@ -1,3 +1,5 @@
+.. _Users-index:
+
 Examples and Tutorials
 ======================
 
