@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>User Manual &mdash; FPGA user interface 0.0.1 documentation</title>
+  <title>Topology &mdash; FPGA user interface 0.0.1 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="FPGA user interface 0.0.1 documentation" href="../index.html"/>
-        <link rel="next" title="Neuron Models" href="NeuronModel.html"/>
-        <link rel="prev" title="Introduction" href="../intro.html"/> 
+        <link rel="up" title="User Manual" href="index.html"/>
+        <link rel="next" title="Neuron Models" href="Stimulation.html"/>
+        <link rel="prev" title="Neuron Models" href="NeuronModel.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -95,11 +96,18 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">User Manual</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Manual</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="NeuronModel.html">Neuron Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Topology.html">Topology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Stimulation.html">Stimulation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ExamplesTutorials.html">Examples and Tutorials</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Topology</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#layered">Layered</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#non-layered">Non-layered</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fully-interconnected-network">Fully interconnected network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#randomly-connected-network">Randomly connected network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#probabilistic-network">Probabilistic network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stimulation.html">Neuron Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Features.html">Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Configuration.html">Configuration</a></li>
 </ul>
 </li>
@@ -149,13 +157,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>User Manual</li>
+          <li><a href="index.html">User Manual</a> &raquo;</li>
+        
+      <li>Topology</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/Users/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Users/Topology.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,17 +178,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="user-manual">
-<span id="users-index"></span><h1>User Manual<a class="headerlink" href="#user-manual" title="Permalink to this headline">¶</a></h1>
-<p>Please follow this page to get familiar with the platform with series of tutorials on how to use the Platform.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="NeuronModel.html">Neuron Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Topology.html">Topology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Stimulation.html">Stimulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ExamplesTutorials.html">Examples and Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Configuration.html">Configuration</a></li>
-</ul>
+  <div class="section" id="topology">
+<h1>Topology<a class="headerlink" href="#topology" title="Permalink to this headline">¶</a></h1>
+<p>Currently implemented neuron models that can be assigned to the neurons.</p>
+<div class="section" id="layered">
+<h2>Layered<a class="headerlink" href="#layered" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="non-layered">
+<h2>Non-layered<a class="headerlink" href="#non-layered" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fully-interconnected-network">
+<h2>Fully interconnected network<a class="headerlink" href="#fully-interconnected-network" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="randomly-connected-network">
+<h2>Randomly connected network<a class="headerlink" href="#randomly-connected-network" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="probabilistic-network">
+<h2>Probabilistic network<a class="headerlink" href="#probabilistic-network" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -192,10 +208,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="NeuronModel.html" class="btn btn-neutral float-right" title="Neuron Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Stimulation.html" class="btn btn-neutral float-right" title="Neuron Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../intro.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="NeuronModel.html" class="btn btn-neutral" title="Neuron Models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

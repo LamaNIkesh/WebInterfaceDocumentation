@@ -1,3 +1,5 @@
+|green|
+
 Introduction
 ============
 
@@ -50,3 +52,5 @@ Bug reports
 -----------
 
 Did you find a bug? Open an issue on `github <https://github.com/LamaNIkesh/SimulationControllerInterface/issues>`_ . Thank you.
+
+.. |green| image:: https://readthedocs.org/projects/webinterfacedocumentation/badge/?version=latest
