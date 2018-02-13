@@ -1,3 +1,5 @@
+.. _Users-ExamplesTutorials:
+
 Examples and Tutorials
 ======================
 
