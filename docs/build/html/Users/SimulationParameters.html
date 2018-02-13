@@ -175,10 +175,12 @@
             
   <div class="section" id="simulation-parameters">
 <span id="users-simulationparameters"></span><h1>Simulation Parameters<a class="headerlink" href="#simulation-parameters" title="Permalink to this headline">¶</a></h1>
+<p>The first step of the network creation is defining the simulation parameters. Here, we define basic parameters for the simulation such as timestamp size, no.of neurons, units for simulation, how long to run the simulation etc.</p>
+<p>The user has to choose wether to have all the neurons with the same model or have a combination of different models. In case of differetn model option, the user has to choose how many of the neurons will use a different model.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="45%" />
-<col width="55%" />
+<col width="34%" />
+<col width="66%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
@@ -191,6 +193,21 @@
 </tr>
 <tr class="row-odd"><td>No.of Neurons</td>
 <td>Total no of neurons</td>
+</tr>
+<tr class="row-even"><td>Are all neurons same model?</td>
+<td>Same models for all the neurons or use different models</td>
+</tr>
+<tr class="row-odd"><td>How many different models?</td>
+<td>If different model is chosen</td>
+</tr>
+<tr class="row-even"><td>Simulation units</td>
+<td>either in milliseconds or seconds</td>
+</tr>
+<tr class="row-odd"><td>Simulation time</td>
+<td>How long to run the simulation in units selected earlier</td>
+</tr>
+<tr class="row-even"><td>Watchdog time</td>
+<td>Time in ms to wait for a packet</td>
 </tr>
 </tbody>
 </table>
