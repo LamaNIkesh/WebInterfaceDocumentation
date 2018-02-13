@@ -5,7 +5,7 @@ Simulation Parameters
 
 The first step of the network creation is defining the simulation parameters. Here, we define basic parameters for the simulation such as timestamp size, no.of neurons, units for simulation, how long to run the simulation etc. 
 
-The user has to choose wether to have all the neurons with the same model or have a combination of different models. In case of differetn model option, the user has to choose how many of the neurons will use a different model.  
+The user has to choose wether to have all the neurons with the same model or have a combination of different models. In case of different model option, the user has to choose how many of the neurons will use a different model.  
 
 +-----------------------------+---------------------------------------------------------+
 | Parameter                   | Description                                             |

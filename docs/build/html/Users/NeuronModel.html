@@ -97,6 +97,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">User Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="UserAccount.html">User Account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SimulationParameters.html">Simulation Parameters</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Neuron Models</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#integrate-and-fire">Integrate and Fire</a></li>
@@ -189,14 +190,85 @@
 <h2>Integrate and Fire<a class="headerlink" href="#integrate-and-fire" title="Permalink to this headline">¶</a></h2>
 <p>Integrate and Fire(<em>InF</em>) is one of the simplest and earliest neuron model. The model is given by,</p>
 <div class="math">
-<p><img src="../_images/math/8eb72b9852c40244d76f02f9ace7c1c361e3f73f.png" alt="I(t)=C_\mathrm{m} \frac{d V_\mathrm{m}(t)}{d t}"/></p>
-</div><p>which is simply the time derivative of the law of capacitance, <img class="math" src="../_images/math/505a790afaa2876e69edeb867c8d5b78e5026877.png" alt="Q=CV"/>. With input current applied, the membrane potential increases with time until it reaches a threshold voltage <img class="math" src="../_images/math/c0c1b85e61c43bf16136f2fa8459cd1ef18313e2.png" alt="V_{th}"/></p>
+<p><img src="../_images/math/ee8d639b6e77ebe4ffbe5c088b9e04587f7fc22d.png" alt="I(t)=C_\mathrm{m} \frac{d V_\mathrm{m}(t)}{dt}"/></p>
+</div><p>which is simply the time derivative of the law of capacitance, <img class="math" src="../_images/math/505a790afaa2876e69edeb867c8d5b78e5026877.png" alt="Q=CV"/>. With input current applied, the membrane potential increases with time until it reaches a threshold voltage <img class="math" src="../_images/math/c0c1b85e61c43bf16136f2fa8459cd1ef18313e2.png" alt="V_{th}"/> at which point a spike (delta function) occurs and the voltage is reset back to the resting potential. One of the major shortcoming of this model is the fact that there is no sense of time-dependent memory meaning the voltage is retained if it is below threshold. In real neurons, there is diffusion of ions which reduces the voltage.</p>
+<p>There are four parameters for this neuron model:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Absolute Refractory period</td>
+<td>Inactive period after a spike</td>
+</tr>
+<tr class="row-odd"><td>Threshold voltage</td>
+<td>Voltage at which a neuron emits a spike</td>
+</tr>
+<tr class="row-even"><td>Reset voltage</td>
+<td>Membrane voltage neuron drop to after a spike</td>
+</tr>
+<tr class="row-odd"><td>Action potential</td>
+<td>Initial membrane potential</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="leaky-integrate-and-fire">
 <h2>Leaky Integrate and Fire<a class="headerlink" href="#leaky-integrate-and-fire" title="Permalink to this headline">¶</a></h2>
+<p>The memory problem present in Integrate and Fire model is mitigated in Leaky Integrate and Fire model by introducing a ‘leakage’ of membrane potential, reflecting diffusion of ions that takes place throught the membrane to return the membrane potential to a resting potential value. The model can be described with,</p>
+<div class="math">
+<p><img src="../_images/math/846342f2b924425db7a8402ed10d17c83a0ddd01.png" alt="I(t)=\frac{V_\mathrm{m}(t)}{R_\mathrm{m}} + C_\mathrm{m} \frac{d V_\mathrm{m}(t)}{dt}"/></p>
+</div><p>where <img class="math" src="../_images/math/f9786566ae44e9f950c0c997c1801f34e8a16620.png" alt="R_{m}"/> is the membrane resistance. The leakage term <img class="math" src="../_images/math/476631d17bcabe181929d17b81e1be98d1f94238.png" alt="\frac{V_\mathrm{m}(t)}{R_\mathrm{m}}"/> is introduced which governs the leakage of ions resulting the voltage to return back to resting potential when no input current is applied.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Absolute Refractory period</td>
+<td>Inactive period after a spike</td>
+</tr>
+<tr class="row-odd"><td>Threshold voltage</td>
+<td>Voltage at which a neuron emits a spike</td>
+</tr>
+<tr class="row-even"><td>Reset voltage</td>
+<td>Membrane voltage neuron drop to after a spike</td>
+</tr>
+<tr class="row-odd"><td>Capacitance</td>
+<td>Membrane capacitance</td>
+</tr>
+<tr class="row-even"><td>Resistance</td>
+<td>Membrane resistance which governs current leakage</td>
+</tr>
+<tr class="row-odd"><td>Action potential</td>
+<td>Initial membrane potential</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="izhikevich">
 <h2>Izhikevich<a class="headerlink" href="#izhikevich" title="Permalink to this headline">¶</a></h2>
+<p>Integrate and fire and Leaky integrate and fire models are simplest neurons models which replicates some dynamics of the neurons but they are not biologically plausible models. For a more biologically plausible models many neurons models are proposed but they get complex resulting in large computational requirements which again is not very useful to model a network of such neurons. Izhikevich neuron model falls in the middle, encompassing biological plausibility and simple and efficient enough to model computationally.</p>
+<p>Izhikevich model reduces a complex biologically plausible Hodgkin and Huxley model to a two-dimensional(2-D) system of ordinary differential equations of the form,</p>
+<div class="math">
+<p><img src="../_images/math/ac15b2d4edbd5426feabfb3293d97ee65676a16a.png" alt="v^{ '} &amp; = 0.04v^{2} + 5v + 140 - u + I
+
+u^{'} &amp; = a(bv - u)"/></p>
+</div><p>with auxiliary after-spike resetting</p>
+<blockquote>
+<div>if <img class="math" src="../_images/math/aedeac1a7f7ea3f97420791fcfe57717d24616da.png" alt="v \geq V_{th}"/>, then <img class="math" src="../_images/math/f987228cc17fd2837fe29d2d527f0d210fffd3a5.png" alt="\begin{cases} v \leftarrow c \\ u \leftarrow u + d \end{cases}"/></div></blockquote>
+<p>Here, <img class="math" src="../_images/math/8d230554a01423c4c6560104b2918b65607c9406.png" alt="v"/> represents the membrane potential of the neuron and <img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/> represents a membrane recovery variable, which accounts of ionic (in)activation. When the membrane potential reaches a threshold, <img class="math" src="../_images/math/c0c1b85e61c43bf16136f2fa8459cd1ef18313e2.png" alt="V_{th}"/></p>
 </div>
 <div class="section" id="custom-models">
 <h2>Custom Models<a class="headerlink" href="#custom-models" title="Permalink to this headline">¶</a></h2>
