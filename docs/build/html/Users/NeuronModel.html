@@ -268,7 +268,49 @@ u^{'} &amp; = a(bv - u)"/></p>
 </div><p>with auxiliary after-spike resetting</p>
 <blockquote>
 <div>if <img class="math" src="../_images/math/aedeac1a7f7ea3f97420791fcfe57717d24616da.png" alt="v \geq V_{th}"/>, then <img class="math" src="../_images/math/f987228cc17fd2837fe29d2d527f0d210fffd3a5.png" alt="\begin{cases} v \leftarrow c \\ u \leftarrow u + d \end{cases}"/></div></blockquote>
-<p>Here, <img class="math" src="../_images/math/8d230554a01423c4c6560104b2918b65607c9406.png" alt="v"/> represents the membrane potential of the neuron and <img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/> represents a membrane recovery variable, which accounts of ionic (in)activation. When the membrane potential reaches a threshold, <img class="math" src="../_images/math/c0c1b85e61c43bf16136f2fa8459cd1ef18313e2.png" alt="V_{th}"/></p>
+<p>Here, <img class="math" src="../_images/math/8d230554a01423c4c6560104b2918b65607c9406.png" alt="v"/> represents the membrane potential of the neuron and <img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/> represents a membrane recovery variable, which accounts of ionic (in)activation. When the membrane potential reaches a threshold, <img class="math" src="../_images/math/c0c1b85e61c43bf16136f2fa8459cd1ef18313e2.png" alt="V_{th}"/>, the membrane voltage is reset back to the resting potential.
+Please refer to <a class="reference external" href="https://www.izhikevich.org/publications/spikes.pdf">Izhikevich paper</a> for detailed information.</p>
+<p>The parameters that are available for users to configure from the interface are:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="68%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>a</td>
+<td>Describes time scale of the recovery variable <img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/></td>
+</tr>
+<tr class="row-odd"><td>b</td>
+<td>Describes sensitivity of the recovery variable <img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/></td>
+</tr>
+<tr class="row-even"><td>c</td>
+<td>Describes after-spike reset value of <img class="math" src="../_images/math/8d230554a01423c4c6560104b2918b65607c9406.png" alt="v"/></td>
+</tr>
+<tr class="row-odd"><td>d</td>
+<td>Describes after-spike reset of the recovery variable <img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/></td>
+</tr>
+<tr class="row-even"><td>Threshold voltage</td>
+<td>Threshold potential for spike</td>
+</tr>
+<tr class="row-odd"><td>Initial action potential</td>
+<td>Starting membrane potential</td>
+</tr>
+<tr class="row-even"><td>Initial membrane recovery</td>
+<td>Initial membrane recovery value</td>
+</tr>
+<tr class="row-odd"><td>Action potential</td>
+<td>Initial action potential</td>
+</tr>
+<tr class="row-even"><td>Membrane recovery</td>
+<td>Membrane recovery value(<img class="math" src="../_images/math/92e3f44c99a016c5238a790c96f12fd46aa93c4a.png" alt="u"/>)</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="custom-models">
 <h2>Custom Models<a class="headerlink" href="#custom-models" title="Permalink to this headline">¶</a></h2>

@@ -80,7 +80,37 @@ with auxiliary after-spike resetting
 
 			if :math:`v \geq V_{th}`, then :math:`\begin{cases} v \leftarrow c \\ u \leftarrow u + d \end{cases}`
 
-Here, :math:`v` represents the membrane potential of the neuron and :math:`u` represents a membrane recovery variable, which accounts of ionic (in)activation. When the membrane potential reaches a threshold, :math:`V_{th}`
+Here, :math:`v` represents the membrane potential of the neuron and :math:`u` represents a membrane recovery variable, which accounts of ionic (in)activation. When the membrane potential reaches a threshold, :math:`V_{th}`, the membrane voltage is reset back to the resting potential.
+Please refer to `Izhikevich paper <https://www.izhikevich.org/publications/spikes.pdf>`_ for detailed information. 
+
+The parameters that are available for users to configure from the interface are: 
+
+
++-----------------------------+---------------------------------------------------------------+
+| Parameter                   | Description                                                   |
++=============================+===============================================================+
+| a			      | Describes time scale of the recovery variable :math:`u`       | 
++-----------------------------+---------------------------------------------------------------+
+| b		              | Describes sensitivity of the recovery variable :math:`u`      | 
++-----------------------------+---------------------------------------------------------------+
+| c			      | Describes after-spike reset value of :math:`v`                |
++-----------------------------+---------------------------------------------------------------+
+| d     	 	      | Describes after-spike reset of the recovery variable :math:`u`|      
++-----------------------------+---------------------------------------------------------------+
+| Threshold voltage           | Threshold potential for spike                                 |
++-----------------------------+---------------------------------------------------------------+
+| Initial action potential    | Starting membrane potential                                   |
++-----------------------------+---------------------------------------------------------------+
+| Initial membrane recovery   | Initial membrane recovery value                               |
++-----------------------------+---------------------------------------------------------------+
+| Action potential            | Initial action potential                                      |
++-----------------------------+---------------------------------------------------------------+
+| Membrane recovery           | Membrane recovery value(:math:`u`)                            |
++-----------------------------+---------------------------------------------------------------+
+
+
+
+
 
 Custom Models
 -------------
