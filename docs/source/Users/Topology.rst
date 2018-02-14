@@ -3,7 +3,10 @@
 Topology
 ========
 
-Currently implemented neuron models that can be assigned to the neurons.
+.. figure:: ../images/topology_layered.png
+
+
+.. figure:: ../images/topology_nonlayered.png
 
 Layered
 ------------------

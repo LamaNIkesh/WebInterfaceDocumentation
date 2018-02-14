@@ -19,7 +19,7 @@ All the configuration are rather simple with just drop down buttons without any 
   ExamplesTutorials
 
 
-The whole process can easily simplied as a flow of events. 
+The whole process is simplied as a flow of events in a sequential order. 
 
 .. figure:: ../images/flowchart.png
 	:align: center
