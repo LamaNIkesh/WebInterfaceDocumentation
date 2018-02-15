@@ -101,11 +101,17 @@
 <li class="toctree-l2"><a class="reference internal" href="SimulationParameters.html">Simulation Parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="NeuronModel.html">Neuron Models</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Topology</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#layered">Layered</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#non-layered">Non-layered</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fully-interconnected-network">Fully interconnected network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#randomly-connected-network">Randomly connected network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#probabilistic-network">Probabilistic network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#architecture">Architecture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#layered">Layered</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#non-layered">Non-layered</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#interconnections">Interconnections</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fully-interconnected-network">Fully interconnected network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#randomly-connected-network">Randomly connected network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#probabilistic-network">Probabilistic network</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Stimulation.html">Stimulation</a></li>
@@ -182,29 +188,37 @@
             
   <div class="section" id="topology">
 <span id="users-topology"></span><h1>Topology<a class="headerlink" href="#topology" title="Permalink to this headline">¶</a></h1>
-<p>The architecture of the simulated neuronal network can be divided as layered and non layered.</p>
+<p>The architecture of the simulated neuronal network can be divided as layered and non layered. Layered networks that can be implemented with this platform is a feedforward network. No recurrency is possible at the moment for a layered network. Different neuron models can be implemented for each layer, for eg. input layer can be of Leaky Integrate and Fire neuons and layer 2 can be Izhikevich and so on.</p>
+<p>Within layered and non-layered networks, how the neurons are connected can also be altered. Manual connection is not a suitable choice since it is labourous and takes very long time to configure one by one. Hence, three differnt options for automatic interconnections are presented. Please see <a class="reference internal" href="#interconnections-lable"><span class="std std-ref">Interconnections</span></a> for more details about the options.</p>
+<div class="section" id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="layered">
+<h3>Layered<a class="headerlink" href="#layered" title="Permalink to this headline">¶</a></h3>
 <div class="figure" id="id1">
 <img alt="../_images/topology_layered.png" src="../_images/topology_layered.png" />
 <p class="caption"><span class="caption-text">Figure:  Graphical illustration of the layered network</span></p>
 </div>
+<p>The figure above shows a typical graphical representation of what a layered network is. This is the exact same kind of network that is created under layered network option.</p>
+</div>
+<div class="section" id="non-layered">
+<h3>Non-layered<a class="headerlink" href="#non-layered" title="Permalink to this headline">¶</a></h3>
 <div class="figure" id="id2">
 <img alt="../_images/topology_nonlayered.png" src="../_images/topology_nonlayered.png" />
 <p class="caption"><span class="caption-text">Figure:  Graphical illustration of the non-layered network</span></p>
 </div>
-<div class="section" id="layered">
-<h2>Layered<a class="headerlink" href="#layered" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="non-layered">
-<h2>Non-layered<a class="headerlink" href="#non-layered" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="interconnections">
+<span id="interconnections-lable"></span><h2>Interconnections<a class="headerlink" href="#interconnections" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="fully-interconnected-network">
-<h2>Fully interconnected network<a class="headerlink" href="#fully-interconnected-network" title="Permalink to this headline">¶</a></h2>
+<h3>Fully interconnected network<a class="headerlink" href="#fully-interconnected-network" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="randomly-connected-network">
-<h2>Randomly connected network<a class="headerlink" href="#randomly-connected-network" title="Permalink to this headline">¶</a></h2>
+<h3>Randomly connected network<a class="headerlink" href="#randomly-connected-network" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="probabilistic-network">
-<h2>Probabilistic network<a class="headerlink" href="#probabilistic-network" title="Permalink to this headline">¶</a></h2>
+<h3>Probabilistic network<a class="headerlink" href="#probabilistic-network" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 </div>
 
@@ -231,7 +245,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Nikesh Lama.
-      Last updated on Feb 14, 2018.
+      Last updated on Feb 15, 2018.
 
     </p>
   </div>
