@@ -9,20 +9,34 @@ Within layered and non-layered networks, how the neurons are connected can also 
 
 
 
-
 Architecture
 ------------
+The first step of the network creation is specifying whether to create a layered or non layered network. 
+
+.. figure:: ../images/layernolayer.png
+
+	Figure: First step of network creation
+
 
 Layered
 ~~~~~~~
 
 The figure below shows a typical graphical representation of what a layered network is. This is the exact same kind of network that is created under layered network option.
-The first step of the network creation is specifying whether to create a layered or non layered network. 
+
 
 .. figure:: ../images/topology_layered.png
 
   Figure:  Graphical illustration of the layered network
 
+Number of layers need to be specified. The menu guides to select number of neurons in each layer along with neuron models for each layer if different neuron model option is selected. 
+
+.. figure:: ../images/no_of_layers.png
+
+	Figure: Menu to choose number of layers
+
+.. figure:: ../images/no_of_neurons.png
+
+	Figure: selection of number of neurons	
 
 
 Non-layered
