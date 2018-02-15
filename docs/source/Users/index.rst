@@ -8,7 +8,7 @@ All the configuration are rather simple with just drop down buttons without any 
 
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 4
 
   UserAccount
   SimulationParameters
