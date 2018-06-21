@@ -1,7 +1,7 @@
 .. _Users-index:
 
-User Manual 
-===========
+Platform Features 
+=================
 This part of the documentation is focused to provide a comprehensive details of the interface for users to make it easier to understand capabilities and limitations for the desired simulation. This section covers all the components of the interface and how they all come together during network creation with different possibilities for different types of neuron models, network type, stimulation and capabilities to control how the simulation runs. 
 
 The interface employs configuration options presented in the form of questionnaires for easy and straightforward configuration. We will cover different aspects of the interface followed with an exemplary tutorials on how to use the platform. 
