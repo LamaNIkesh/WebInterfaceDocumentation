@@ -6,11 +6,11 @@ This part of the documentation is focused to provide a comprehensive details of 
 
 The interface employs configuration options presented in the form of questionnaires for easy and straightforward configuration. We will cover different aspects of the interface followed with an exemplary tutorials on how to use the platform. 
 
-The whole process is simplied as a flow of events in a sequential order. 
+The simulation workflow is simplied as a flow of events in a sequential order. 
 
 .. figure:: ../images/flowchart.png
 	:align: center
-
+  :caption: workflow 
 
 
 .. toctree::
