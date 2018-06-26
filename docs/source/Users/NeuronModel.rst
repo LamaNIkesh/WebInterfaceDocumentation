@@ -28,7 +28,7 @@ There are four parameters for this neuron model:
 +-----------------------------+---------------------------------------------------------+
 | Threshold voltage           | Voltage at which a neuron emits a spike                 | 
 +-----------------------------+---------------------------------------------------------+
-| Reset voltage 	      | Membrane voltage neuron drop to after a spike           |
+| Reset voltage       	      | Membrane voltage neuron drop to after a spike           |
 +-----------------------------+---------------------------------------------------------+
 | Action potential            | Initial membrane potential                              |
 +-----------------------------+---------------------------------------------------------+
