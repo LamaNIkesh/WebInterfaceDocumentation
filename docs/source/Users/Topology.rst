@@ -40,6 +40,8 @@ The menu guides to select number of neurons in each layer along with neuron mode
 Non-layered
 ~~~~~~~~~~~
 
+In contrast to layered network, non layered network has no apparent layered structured. Any two neurons can be connected to each other. The user has full control over which neurons can be assigned as input neurons and output neurons. The topology can be illustrated as shown in the figure below. 
+
 .. figure:: ../images/topology_nonlayered.png
 
   Figure:  Graphical illustration of the non-layered network 
