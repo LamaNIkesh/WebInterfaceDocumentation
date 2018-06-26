@@ -12,8 +12,10 @@ Architecture
 The first step of the network creation is specifying whether to create a layered or non layered network. 
 
 .. figure:: ../images/layernolayer.png
-
-	Figure: First step of network creation
+  :align: center
+  :scale: 90%
+	
+  Figure: First step of network creation
 
 
 Layered
@@ -22,6 +24,8 @@ Layered
 The figure below shows a typical graphical representation of what a layered network is. The first layer in the layered network is the input layer where stimulus are applied and the last layer is the readout layer. The interconnections among neurons between the layers is described in :ref:`interconnections_lable`. 
 
 .. figure:: ../images/topology_layered.png
+  :align: center
+  :scale: 70%
 
   Figure:  Graphical illustration of the layered network
 
@@ -29,10 +33,14 @@ Number of layers need to be specified. Neuron are numbered in an increasing orde
 The menu guides to select number of neurons in each layer along with neuron models for each layer if different neuron model option is selected. 
 
 .. figure:: ../images/no_of_layers.png
+  :align: center
+  :scale: 70%
 
 	Figure: Menu to choose number of layers
 
 .. figure:: ../images/no_of_neurons.png
+  :align: center
+  :scale: 70%
 
 	Figure: selection of number of neurons	
 
