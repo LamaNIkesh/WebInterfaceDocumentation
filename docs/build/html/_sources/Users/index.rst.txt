@@ -14,7 +14,7 @@ The simulation workflow is simplied as a flow of events in a sequential order.
 
 
 .. toctree::
-  :maxdepth: 4
+  :maxdepth: 5
 
   UserAccount
   SimulationParameters
